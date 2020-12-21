@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Conten-Type" content="text/html">
+    <title>Video</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <!-- Parralax.js by the great Mathew Wagerfield & Claudio Guglieri -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!--Basic JS-->
+    <script src="script.js" type="text/javascript" defer></script>
+    <!--Youtube API-->
+    <script type="text/javascript" src="https://www.youtube.com/player_api"></script>
+    <script src="youtubeapi.js"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="photos/sign.png">
+</head>
+
+<body>
+    <!-- Nav -->
+    <div id="navvideo">
+        <a class="hvr-grow" id="navelm" href="index.html">Home</a>
+        <a class="hvr-grow" id="navelm" href="video.html">Video</a>
+        <div class="container">
+            <div class="toggle-btn" onclick="swt(); this.classList.toggle('active');">
+                <div class="inner-circle"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Background Video -->
+    <div class="banner">
+        <video class="video-background" poster="photos/sunsetattersee.jpg" autoplay loop muted playsinline>
+            <source src="video/final.mp4" type="video/mp4">
+        </video>
+        <!-- Parallax Effect with Text -->
+        <div id="typewriter">
+            <div data-depth="1" id="typewriter-text">capture every frame&nbsp;</div>
+            <!-- load parallax.js -->
+            <script>
+                let scene = document.getElementById('typewriter');
+                let parallaxInstance = new Parallax(scene);
+            </script>
+        </div>
+    </div>
+    <!-- My Work -->
+    <div id="hrflex">
+        <div id="hrflexelm">
+            <hr>
+        </div>
+        <div id="hrflexelm">Meine Arbeit</div>
+        <div id="hrflexelm">
+            <hr>
+        </div>
+    </div>
+
+    <!--Videoflexbox 1-->
+    <div class="videoflex" id="list">
+        <div class="videoflexelm">
+            <iframe id="player"
+                src="https://www.youtube.com/embed/0uip3rU12fk?wmode=Opaque&enablejsapi=1&showinfo=0&controls=0&disablekb=1&loop=1&modestbranding=1&showinfo=0&fs=0"
+                frameborder="0"></iframe>
+        </div>
+        <div class="videoflexelm">
+            <iframe id="player2"
+                src="https://www.youtube.com/embed/igWAW3OgC5M?wmode=Opaque&enablejsapi=1&showinfo=0&controls=0&disablekb=1&loop=1&modestbranding=1&showinfo=0&fs=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </iframe>
+        </div>
+        <div class="videoflexelm">
+            <iframe id="player3"
+                src="https://www.youtube.com/embed/shUaJeu_hOY?wmode=Opaque&enablejsapi=1;showinfo=0;controls=0;disablekb=1;loop=1;modestbranding=1;showinfo=0;fs=0"
+                frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div id="hrflex">
+        <div id="hrflexelm">
+            <hr>
+        </div>
+        <div id="hrflexelm"><span class="hvr-grow">More on Youtube</span></div>
+        <div id="hrflexelm">
+            <hr>
+        </div>
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+    <div class="footermain"><a class="hvr-grow" href="https://instagram.com/iamthatoli%22%3E"> <img
+                src="photos/instagram.png" alt="instalogo"></a> <a class="hvr-grow"
+            href="mailto:oliver.schatzberger@outlook.com"><img src="photos/gmail.png" alt="vimeologo"></a> <a
+            class="hvr-grow" href="https://www.youtube.com/channel/UCR2xDPrmHrOxj7tzXMVfdfg%22%3E"> <img
+                src="photos/youtube.png" alt="ytlogo"></a> </div>
+</body>
+
+</html>
