@@ -35,8 +35,7 @@ let speed = 70;
 let i = 0;
 let getp = document.getElementById('typeP')
 let txt = `Ich bin 16. Jahre alt und komme aus Oberösterreich. Derzeit besuche ich die HTL Leonding. In
-    meiner Freizeit filme und fotografiere ich gerne. Außerdem betreibe ich gerne Sport und gehe gerne
-    Skifahren.`;
+    meiner Freizeit filme und fotografiere ich gerne.`;
 
 // Typewriter effect
 function typewriter() {
